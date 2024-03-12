@@ -1,0 +1,25 @@
+{
+    "second_schedule":
+    [
+        {"use":0, "interval":10, "class":"MergeSchedulerMainApp", "method":"DoScheduleAtSecondDefault", "comment":"프로세스 체크, 10초", "call_schell_script":""},
+        {"use":0, "interval":30, "class":"MergeSchedulerMainApp", "method":"DoExternalScript", "comment":"임의의 쉘 스크립트 수행", "call_schell_script":""}
+
+        
+    ],
+
+    "min_schedule":
+    [
+        {"use":0, "interval":1, "class":"MergeSchedulerMainApp", "method":"DoScheduleAtMinutesDefault", "comment":"1분 기본 스케쥴러", "call_schell_script":""}		
+    ],
+
+    "hour_schedule":
+    [
+        {"use":0, "interval":1, "class":"MergeSchedulerMainApp", "method":"DoScheduleAtHourDefault", "comment":"1시간 기본 스케쥴러", "call_schell_script":""}
+    ],
+
+    "day_schedule":
+    [
+        {"use":1, "interval":1, "at_time":"17:00", "class":"MergeSchedulerMainApp", "method":"DoExternalScript", "comment":"하루 기본 스케줄러", "call_schell_script":""}
+    ]
+
+}
